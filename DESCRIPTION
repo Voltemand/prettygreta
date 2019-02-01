@@ -1,13 +1,14 @@
 Package: prettygreta
-Title: What the Package Does (One Line, Title Case)
+Title: A Pretty Front-end for greta
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Jeffrey",
+           family = "Pullin",
            role = c("aut", "cre"),
-           email = "first.last@example.com")
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "jeffrey.pullin@gmail.com")
+Description: A prettier more mathematical front end (wrapper) for the bayesian 
+  modelling package greta.
+License: GPL-2
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.0

@@ -2,6 +2,9 @@
 #'
 #' @details see greta documentation
 #'
+#' @export
+#'
+#' @import greta
 N <- function(mean, sd){
   normal(mean, sd)
 }
@@ -10,6 +13,9 @@ N <- function(mean, sd){
 #'
 #' @details see greta documentation
 #'
+#' @export
+#'
+#' @import greta
 HalfCauchy <- function(location, scale){
   cauchy(location, scale, truncation = c(0, Inf))
 }

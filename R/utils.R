@@ -3,6 +3,8 @@
 #' @param x an object
 #' @return length 1 logical vector
 #'
+#' @import greta
+#'
 is.greta_array <- function(x) {
   inherits(x, "greta_array")
 }
@@ -23,6 +25,8 @@ in_env <- function(name, env) {
 #' @return length 1 logical vector
 #'
 #' @details Any non greta_array object has no distribution by definition
+#'
+#' @import greta
 #'
 has_distrib <- function(x) {
   if (inherits(x, "greta_array")) {
