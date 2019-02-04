@@ -7,9 +7,11 @@
 greta_assign(expr_x, y, env)
 }
 \arguments{
+\item{expr_x}{an expression for x}
+
 \item{y}{greta_array}
 
-\item{quo_x}{a rlang::quosure wrapping the first argument to \code{x}}
+\item{env}{the enviroment ~ was called in}
 }
 \description{
 Do some assignment with greta objects

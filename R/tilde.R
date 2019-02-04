@@ -1,3 +1,15 @@
+#' Reworked ~ for pretty greta use
+#'
+#' @param x object
+#' @param y object
+#'
+#' @importFrom stats formula
+#'
+#' @export
+#'
+#' @details if y is a formula will try to do greta assignment otherwise will
+#' convert to a normal formula
+#'
 `~` <- function(x, y) {
 
   env <- parent.frame()
@@ -18,8 +30,9 @@
 
 #' Do some assignment with greta objects
 #'
-#' @param quo_x a rlang::quosure wrapping the first argument to \code{x}
+#' @param expr_x an expression for x
 #' @param y greta_array
+#' @param env the enviroment ~ was called in
 #'
 #' @import greta
 #'

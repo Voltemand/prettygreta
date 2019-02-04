@@ -2,20 +2,19 @@
 % Please edit documentation in R/tilde.R
 \name{~}
 \alias{~}
-\title{Reworked ~ for use in greta}
+\title{Reworked ~ for pretty greta use}
 \usage{
 "~"(x, y)
 }
 \arguments{
-\item{x}{an object}
+\item{x}{object}
 
-\item{y}{an object}
+\item{y}{object}
 }
 \description{
-Reworked ~ for use in greta
+Reworked ~ for pretty greta use
 }
 \details{
-If y is not a greta array ~ uses rlang to construct a normal
-formula call. Otherwise ~ will assign greta array, and will use
-\code{`distribution<-`} if appropriate
+if y is a formula will try to do greta assignment otherwise will
+convert to a normal formula
 }
