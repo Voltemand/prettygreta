@@ -4,12 +4,12 @@
 \alias{greta_assign}
 \title{Do some assignment with greta objects}
 \usage{
-greta_assign(quo_x, y)
+greta_assign(expr_x, y, env)
 }
 \arguments{
-\item{quo_x}{a rlang::quosure wrapping the first argument to \code{x}}
-
 \item{y}{greta_array}
+
+\item{quo_x}{a rlang::quosure wrapping the first argument to \code{x}}
 }
 \description{
 Do some assignment with greta objects

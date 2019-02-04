@@ -6,7 +6,7 @@
 #'
 #' @import greta
 N <- function(mean, sd){
-  normal(mean, sd)
+  greta::normal(mean, sd)
 }
 
 #' Pretty half cauchy distributions
@@ -17,5 +17,5 @@ N <- function(mean, sd){
 #'
 #' @import greta
 HalfCauchy <- function(location, scale){
-  cauchy(location, scale, truncation = c(0, Inf))
+  greta::cauchy(location, scale, truncation = c(0, Inf))
 }
